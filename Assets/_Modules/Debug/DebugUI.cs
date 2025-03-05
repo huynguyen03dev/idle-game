@@ -20,12 +20,11 @@ public class DebugUI : MonoBehaviour {
     [SerializeField] private KeyCode reloadSceneKey = KeyCode.F5;
 
     // Store debug menu items and their actions
-    private Dictionary<string, Action> debugActions = new Dictionary<string, Action>();
+    // private Dictionary<string, Action> debugActions = new Dictionary<string, Action>();
     
     private void Awake() {
         DontDestroyOnLoad(gameObject);
         
-        // Set process mode to run even when game is paused
         if (menuButton != null) {
             menuButton.onClick.AddListener(ToggleMenu);
         }
@@ -62,51 +61,6 @@ public class DebugUI : MonoBehaviour {
         ClearMenu();
         
         // Time scale controls
-        AddSeparator("Time Scale");
-        AddMenuItem("Increase +", () => { Time.timeScale += 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Reset to 1.0", () => { Time.timeScale = 1.0f; Debug.Log("Time Scale reset to 1.0"); });
-        
-        AddSeparator("Time Scale");
-        AddMenuItem("Increase +", () => { Time.timeScale += 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Reset to 1.0", () => { Time.timeScale = 1.0f; Debug.Log("Time Scale reset to 1.0"); });
-        
-        AddSeparator("Time Scale");
-        AddMenuItem("Increase +", () => { Time.timeScale += 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Reset to 1.0", () => { Time.timeScale = 1.0f; Debug.Log("Time Scale reset to 1.0"); });
-        
-        AddSeparator("Time Scale");
-        AddMenuItem("Increase +", () => { Time.timeScale += 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Reset to 1.0", () => { Time.timeScale = 1.0f; Debug.Log("Time Scale reset to 1.0"); });
-        
-        AddSeparator("Time Scale");
-        AddMenuItem("Increase +", () => { Time.timeScale += 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Reset to 1.0", () => { Time.timeScale = 1.0f; Debug.Log("Time Scale reset to 1.0"); });
-        
-        AddSeparator("Time Scale");
-        AddMenuItem("Increase +", () => { Time.timeScale += 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Reset to 1.0", () => { Time.timeScale = 1.0f; Debug.Log("Time Scale reset to 1.0"); });
-        
-        AddSeparator("Time Scale");
-        AddMenuItem("Increase +", () => { Time.timeScale += 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Reset to 1.0", () => { Time.timeScale = 1.0f; Debug.Log("Time Scale reset to 1.0"); });
-        
-        AddSeparator("Time Scale");
-        AddMenuItem("Increase +", () => { Time.timeScale += 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Reset to 1.0", () => { Time.timeScale = 1.0f; Debug.Log("Time Scale reset to 1.0"); });
-        
-        AddSeparator("Time Scale");
-        AddMenuItem("Increase +", () => { Time.timeScale += 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
-        AddMenuItem("Reset to 1.0", () => { Time.timeScale = 1.0f; Debug.Log("Time Scale reset to 1.0"); });
-        
         AddSeparator("Time Scale");
         AddMenuItem("Increase +", () => { Time.timeScale += 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
         AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
