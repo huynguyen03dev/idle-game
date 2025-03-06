@@ -66,6 +66,10 @@ public class DebugUI : MonoBehaviour {
         AddMenuItem("Decrease -", () => { Time.timeScale -= 0.3f; Debug.Log($"Time Scale: {Time.timeScale}"); });
         AddMenuItem("Reset to 1.0", () => { Time.timeScale = 1.0f; Debug.Log("Time Scale reset to 1.0"); });
         
+        AddSeparator("Enemy");
+        AddMenuItem("Spawn Enemy", () => {
+            EnemyManager.Instance.SpawnEnemy(EnemyManager.Instance.testSpawnPosition.position);
+        });
         // Example Camera Shake (commented out, implement as needed)
         /*
         AddSeparator("Camera");

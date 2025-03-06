@@ -9,4 +9,5 @@ public class BaseStats : ScriptableObject {
     public float healthRegen;  // per second
     public float critChance;
     public float critDamage;
+    public float moveSpeed;
 }

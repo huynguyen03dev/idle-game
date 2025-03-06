@@ -6,6 +6,6 @@ public class Testing : MonoBehaviour {
     private void Start() {
         playerData = new PlayerData();
 
-        Debug.Log(playerData.PlayerBaseStats.attackRange);
+        // Debug.Log(playerData.PlayerBaseStats.attackRange);
     }
 }

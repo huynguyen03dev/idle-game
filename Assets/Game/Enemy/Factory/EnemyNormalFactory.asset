@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e294b90deb9cc454fa823aca882d85ef, type: 3}
-  m_Name: NormalEnemy
+  m_Script: {fileID: 11500000, guid: 6833bc71e2ef4c648aea839851fd80ef, type: 3}
+  m_Name: EnemyNormalFactory
   m_EditorClassIdentifier: 
-  nameString: 0
-  moveSpeed: 0
-  baseStats: {fileID: 0}
-  enemyPrefab: {fileID: 0}
+  enemyType: {fileID: 11400000, guid: 244c1dd33a4404345baec1957fd74866, type: 2}

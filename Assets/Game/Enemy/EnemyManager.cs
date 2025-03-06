@@ -2,13 +2,14 @@ using UnityEngine;
 using UnityUtils;
 
 public class EnemyManager : Singleton<EnemyManager> {
-    public Transform EnemyPrefab;
+    public EnemyFactory enemyFactory;
+    public Transform testSpawnPosition;
 
     [SerializeField] private Transform enemyContainer;
 
-    
-
     public void SpawnEnemy(Vector3 spawnPosition) {
-        var enemy = Instantiate(EnemyPrefab, spawnPosition, Quaternion.identity, enemyContainer);
+        var enemy = enemyFactory.Create();
+        enemy.transform.position = spawnPosition;
+        enemy.transform.SetParent(enemyContainer);
     }    
 }

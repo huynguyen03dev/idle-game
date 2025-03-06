@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class EnemyBase : MonoBehaviour {
-    [field: SerializeField] public BaseStats EnemyBaseStats { get; private set; }
+    protected BaseStats enemyBaseStats;
 
     private Dictionary<StatType, float> statTypesToMultiplier;
 
@@ -13,4 +13,9 @@ public abstract class EnemyBase : MonoBehaviour {
             statTypesToMultiplier.Add(statType, 1f);
         }
     }
+
+    public virtual void Setup(BaseStats baseStats) {
+        enemyBaseStats = baseStats;
+    }
 }
+

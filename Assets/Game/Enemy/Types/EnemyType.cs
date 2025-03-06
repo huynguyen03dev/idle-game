@@ -7,7 +7,6 @@ using UnityUtils;
 public class EnemyType : ScriptableObject {
     [ReadOnly]
     public string nameString;
-    public float moveSpeed;
     public BaseStats baseStats;
     public Transform enemyPrefab;
     
