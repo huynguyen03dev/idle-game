@@ -12,10 +12,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae7868973fe0b6e4195115647981a74f, type: 3}
   m_Name: EnemyNormalBaseStats
   m_EditorClassIdentifier: 
-  attackDamage: 1
-  attackSpeed: 1
-  attackRange: 1
-  health: 10
-  healthRegen: 0
-  critChance: 0
-  critDamage: 100
+  attackDamage:
+    statType: 0
+    statCategory: 0
+    value: 1
+    statCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  attackSpeed:
+    statType: 1
+    statCategory: 0
+    value: 1
+    statCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  attackRange:
+    statType: 2
+    statCategory: 0
+    value: 0.1
+    statCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  health:
+    statType: 3
+    statCategory: 0
+    value: 10
+    statCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  healthRegen:
+    statType: 4
+    statCategory: 0
+    value: 0
+    statCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  critChance:
+    statType: 5
+    statCategory: 0
+    value: 0
+    statCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  critDamage:
+    statType: 6
+    statCategory: 0
+    value: 100
+    statCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  moveSpeed:
+    statType: 7
+    statCategory: 0
+    value: 10
+    statCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4

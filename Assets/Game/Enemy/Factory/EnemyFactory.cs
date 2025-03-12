@@ -1,8 +1,14 @@
 using UnityEngine;
 
-public abstract class EnemyFactory : ScriptableObject{
-    public EnemyType enemyType;
+public interface IEnemyFactory
+{
+    public EnemySettings enemyType { get; }
 
-    public abstract EnemyBase Create();
+    EnemyBase Create();
+}
+
+public abstract class EnemyFactory : FlyweightFactory {
+    public EnemySettings settings { get; }
+
 }
 

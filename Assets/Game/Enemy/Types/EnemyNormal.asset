@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e294b90deb9cc454fa823aca882d85ef, type: 3}
   m_Name: EnemyNormal
   m_EditorClassIdentifier: 
-  nameString: NormalEnemy
-  moveSpeed: 10
+  type: 1
+  prefab: {fileID: 4835209589285293600, guid: 95af46b95c3232e44bff95a9301d16a2, type: 3}
+  nameString: EnemyNormal
   baseStats: {fileID: 11400000, guid: a542ef769e3ab414ba4385ef9640fbfe, type: 2}
-  enemyPrefab: {fileID: 0}

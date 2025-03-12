@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
+using UnityUtils;
 
-public class DebugUI : MonoBehaviour {
+public class DebugUI : PersistentSingleton<DebugUI> {
     [Header("UI References")]
     [SerializeField] private Transform debugMenuPanel;
     [SerializeField] private Button menuButton;
@@ -22,8 +23,8 @@ public class DebugUI : MonoBehaviour {
     // Store debug menu items and their actions
     // private Dictionary<string, Action> debugActions = new Dictionary<string, Action>();
     
-    private void Awake() {
-        DontDestroyOnLoad(gameObject);
+    protected override void Awake() {
+        base.Awake();
         
         if (menuButton != null) {
             menuButton.onClick.AddListener(ToggleMenu);
